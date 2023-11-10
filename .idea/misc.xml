@@ -1,0 +1,81 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_button.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_button_disable.xml" value="0.3277777777777778" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_cardview_light_blue_bordered.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_edittext.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_green.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_grey_bordered.xml" value="0.2765625" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_outlined.xml" value="0.3277777777777778" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_red.xml" value="0.27335907335907333" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_spinner.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/bg_yellow.xml" value="0.3630769230769231" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/ic_logout.xml" value="0.31891891891891894" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/ic_overflow.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/progress_icon.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/drawable/wave_toolbar.xml" value="0.36875" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/activity_empty_item.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/custom_toast.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/daftar_berobat_activity.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/daftar_pelayanan_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/detail_kartu_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/detail_konfimasi_pasien.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/detail_pasien_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_add_dokter.xml" value="0.22" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_add_obat.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_add_pelayanan.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_add_pemilik.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_add_rekam_medis.xml" value="0.33" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_detail_pasien_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_searchable_spinner.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_show_data_pasien.xml" value="0.35260416666666666" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/dialog_tambah_pembayaran.xml" value="0.33" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_data_default.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_data_dokter.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_data_obat.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_data_pasien_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_data_pelayanan.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_pasien_berobat.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_profile.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_rekam_medis.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_show_data_general.xml" value="0.22" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/form_tambah_data_general.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/home_activity.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/home_master_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_data_default.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_data_dokter.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_data_obat.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_data_pasien.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_detail_konfirmasi_pasien.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_kartu_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_konfirmasi_pasien.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_menu.xml" value="0.35260416666666666" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_menu_admin.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_pembayaran.xml" value="0.34717948717948716" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_rekam_medis.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_report.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/item_title_dialog_pasien_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/konfirmasi_pasien_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/layout_report.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/login_activity.xml" value="0.25" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/profile_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/progress_bar_dialog.xml" value="0.35260416666666666" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/register_activity.xml" value="0.33" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/report_pasien_berobat.xml" value="0.31342592592592594" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/splash_activity.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/layout/tester.xml" value="0.264453125" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/menu/popup_menu.xml" value="0.30495495495495495" />
+        <entry key="..\:/Training/SKRIPSI/Klinik/app/src/main/res/xml/provider_paths.xml" value="0.31342592592592594" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

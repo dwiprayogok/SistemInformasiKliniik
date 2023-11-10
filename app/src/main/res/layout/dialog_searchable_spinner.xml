@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/titleDialog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pilih Obat"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/titleDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_data"
+        android:hint="Search..."
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/search_data"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rvSearchData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

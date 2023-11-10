@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:hint="Username"
+            android:id="@+id/edtUsername"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"/>
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtUsername"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/layout_edt"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            app:passwordToggleTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="@drawable/bg_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:hint="password"
+                android:id="@+id/edtPassword"
+                android:ems="15"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvNIK"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/layout_edt"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="number"
+            android:maxLength="16"
+            android:textSize="14sp"
+            android:hint="NIK"
+            android:id="@+id/edtNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNIK"/>
+
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtNIK"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:hint="Nama Lengkap"
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNama"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvGender"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            app:layout_constraintTop_toBottomOf="@id/edtNama"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <RadioButton
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGender"
+            android:id="@+id/rbGenderLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki - laki"/>
+
+        <RadioButton
+            app:layout_constraintBaseline_toBaselineOf="@id/rbGenderLaki"
+            app:layout_constraintStart_toEndOf="@id/rbGenderLaki"
+            app:layout_constraintTop_toBottomOf="@id/tvGender"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rbGenderPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+
+
+        <TextView
+            android:id="@+id/tvUsia"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usia"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/rbGenderLaki"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:hint="Masukkan Usia"
+            android:id="@+id/edtUsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUsia"/>
+
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Lengkap"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtUsia"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:singleLine="false"
+            android:maxLines="5"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:textSize="14sp"
+            android:hint="Masukkan Alamat"
+            android:id="@+id/edtAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAlamat"/>
+
+
+        <TextView
+            android:id="@+id/tvPekerjaan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Pekerjaan"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtAlamat"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:hint="Masukkan Pekerjaan"
+            android:id="@+id/edtStatusPekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPekerjaan"/>
+
+
+        <TextView
+            android:id="@+id/tvNoHp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Handphone"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtStatusPekerjaan"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textSize="14sp"
+            android:hint="Masukkan No HP"
+            android:id="@+id/edtNoHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNoHp"/>
+
+
+
+        <Button
+            android:id="@+id/btnUpdateDialogDataPasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button"
+            android:text="Simpan Perubahan"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtNoHP" />
+
+
+        <Button
+            android:id="@+id/btnHapusDialogDataPasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_red"
+            android:text="Hapus Pasien"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUpdateDialogDataPasien" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

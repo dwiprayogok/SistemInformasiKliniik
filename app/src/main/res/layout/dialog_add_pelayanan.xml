@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvKodePelayanan"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Layanan"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtIdPelayanan"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKodePelayanan"/>
+
+    <TextView
+        android:id="@+id/tvNamaPelayanan"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Layanan"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtIdPelayanan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtNamaPelayanan"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaPelayanan"/>
+
+
+    <TextView
+        android:id="@+id/tvBiayaLayanan"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biaya Layanan"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtNamaPelayanan"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtBiayaPelayanan"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBiayaLayanan"/>
+
+
+    <Button
+        android:id="@+id/btnSimpanDialogPelayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Tambah Layanan"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBiayaPelayanan" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnUpdateDialogLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Simpan Perubahan"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBiayaPelayanan" />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnHapusDialogLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_red"
+        android:text="Hapus Layanan"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateDialogLayanan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sisteminformasikliniik">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_klinik"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_klinik"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".View.Login.SplashScreenActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".View.Login.LoginActivity"/>
+        <activity android:name=".View.Login.RegisterActivity"/>
+        <activity android:name=".View.Login.HomeActivity"/>
+
+
+        <activity android:name=".View.Admin.KonfirmasiPasien.KonfirmasiPasienActivity"/>
+        <activity android:name=".View.Admin.KonfirmasiPasien.DetailKonfirmasiPasienActivity"/>
+
+        <activity android:name=".View.Admin.DataMaster.DataMasterActivity"/>
+        <activity android:name=".View.Admin.DataMaster.DataMasterPasienActivity"/>
+        <activity android:name=".View.Admin.DataMaster.DataMasterDokterActivity"/>
+        <activity android:name=".View.Admin.DataMaster.DataMasterPelayananActivity"/>
+        <activity android:name=".View.Admin.DataMaster.DataMasterObatActivity"/>
+        <activity android:name=".View.Admin.DataMaster.DataMasterPemilikActivity"/>
+
+        <activity android:name=".View.Admin.Transaksi.MenuTransaksiActivity"/>
+        <activity android:name=".View.Admin.Transaksi.PembayaranActivity"/>
+        <activity android:name=".View.Admin.Transaksi.DataPasienBerobat"/>
+
+        <activity android:name=".View.User.DaftarBerobatActivity"/>
+        <activity android:name=".View.User.ProfileActivity"/>
+        <activity android:name=".View.User.KartuBerobatActivity"/>
+
+        <activity android:name=".View.Dokter.RekamMedisActivity"/>
+
+        <activity android:name=".View.Dokter.ProfileDokterActivity"/>
+        <activity android:name=".View.Owner.ProfileOwnerActivity"/>
+
+
+        <activity android:name=".View.Owner.ReportDataPasienActivity"/>
+        <activity android:name=".View.Owner.ReportPasienBerobatActivity"/>
+        <activity android:name=".View.Owner.ReportRekamMedisActivity"/>
+        <activity android:name=".View.Owner.ReportPembayaranActivity"/>
+        <activity android:name=".View.Owner.LaporanActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.sisteminformasikliniik.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

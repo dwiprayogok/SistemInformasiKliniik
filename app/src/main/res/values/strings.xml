@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Klinik Nurriz Medika</string>
+    <string name="format_all_day">EEEE</string>
+    <string name="format_all_day_date_month_year">EEEE, dd MMM yyyy</string>
+    <string name="format_all_day_date_month_year_full">EEEE, dd MMMM yyyy</string>
+    <string name="format_all_day_date_month_year_full_month">dd MMMM yyyy</string>
+    <string name="format_all_day_date_month_year_hour_minute">EEEE, dd-MM-yyyy HH:mm</string>
+    <string name="format_all_day_date_month_year_hour_minute_2">dd MMMM yyyy, HH:mm</string>
+    <string name="format_all_day_date_month_year_hour_minute_3">dd MMMM yyyy HH:mm</string>
+    <string name="format_all_year_month_date">yyyy-MM-dd</string>
+    <string name="format_all_date_month_year">dd-MM-yyyy</string>
+    <string name="format_all_date_month_year_slashed">dd/MM/yyyy</string>
+    <string name="format_all_timezone_minute">yyyy-MM-dd\'T\'HH:mmZ</string>
+    <string name="format_all_timezone_miilisecond">yyyy-MM-dd\'T\'HH:mm:ss.SSSZ</string>
+</resources>

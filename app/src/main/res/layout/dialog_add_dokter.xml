@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtUsernameDialogDokter"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUsername"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtUsernameDialogDokter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/layout_edt"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:id="@+id/edtPasswordDialogDokter"
+            android:ems="15"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvNikDokter"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIK"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/layout_edt"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtNIKDialogDokter"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNikDokter"/>
+
+    <TextView
+        android:id="@+id/tvNamaDokter"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtNIKDialogDokter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtNamaDokterDialogDokter"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaDokter"/>
+
+
+    <TextView
+        android:id="@+id/tvNoHpDokter"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Handphone"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtAlamatDialogDokter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtNoHpDialogDokter"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoHpDokter"/>
+
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/edtNamaDokterDialogDokter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:id="@+id/edtAlamatDialogDokter"
+        android:singleLine="false"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:minLines="2"
+        android:gravity="top|start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlamat"/>
+
+
+    <Button
+        android:id="@+id/btnSimpanDialogDokter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Tambah Dokter"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNoHpDialogDokter" />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnUpdateDialogDokter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_button"
+        android:text="Simpan Perubahan"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNoHpDialogDokter" />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnHapusDialogDokter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_red"
+        android:text="Hapus Dokter/Bidan"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdateDialogDokter" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

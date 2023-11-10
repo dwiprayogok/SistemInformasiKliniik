@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/tvNoPelayanan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Berobat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:id="@+id/edtKodeBerobat"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNoPelayanan"/>
+
+        <TextView
+            android:id="@+id/tvKodeRekam"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Rekam"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtKodeBerobat"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:id="@+id/edtKodeRekam"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKodeRekam"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtKodeRekam"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:id="@+id/edtStatus"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus"/>
+
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtStatus"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNama"/>
+
+
+        <TextView
+            android:id="@+id/tvUsia"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umur"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtNama"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:id="@+id/edtUsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUsia"/>
+
+
+        <TextView
+            android:id="@+id/tvTanggalBerobat"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Periksa"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtUsia"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:id="@+id/tvValueTanggalPeriksa"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTanggalBerobat"/>
+
+
+        <TextView
+            android:id="@+id/tvNamaDokter"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Dokter"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvValueTanggalPeriksa"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:id="@+id/edtNamaDokterDialogDetailKartuBerobat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNamaDokter"/>
+
+
+        <TextView
+            android:id="@+id/tvAnamnesa"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anamnesa"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtNamaDokterDialogDetailKartuBerobat"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:singleLine="false"
+            android:maxLines="5"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:textSize="14sp"
+            android:id="@+id/edtAnamnesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAnamnesa"/>
+
+
+        <TextView
+            android:id="@+id/tvTherapi"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Therapi"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtAnamnesa"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:singleLine="false"
+            android:maxLines="5"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:textSize="14sp"
+            android:id="@+id/edtTherapi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTherapi"/>
+
+
+        <TextView
+            android:id="@+id/tvKeterangan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/edtTherapi"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:singleLine="false"
+            android:maxLines="5"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:textSize="14sp"
+            android:id="@+id/edtKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKeterangan"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
